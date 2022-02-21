@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 1440px;
+    margin: auto;
+}
+
+.debug {
+    background-color: rgba(155, 173, 235, 0.356);
+}
+
+.debug > header{
+    background-color: rgba(0, 0, 255, 0.521);
+    height: 150px;
+}
+
+.debug .page_nav {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(87, 170, 209);
+    margin-top: 20px;
+}
+
+/* utilities
+*************/
+
+.m_top {
+    margin-top: 30px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* header
+**********/
+
+.logo {
+    width: 175px;
+    height: auto;
+    border-right: 1px solid lightgray;
+    padding-right: 20px;
+}
+
+/* header - Nav
+****************/
+
+.page_nav {
+    margin-top: 1rem;
+}
+
+.page_nav > a {
+    float: left;
+    color: lightgrey;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.page_nav > a:hover {
+    background-color: rgba(228, 228, 228, 0.521);
+    color: black;
+    border-radius: 15px;
+}
+
+.page_nav > a.active {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border-radius: 15px;
+}
+
+/* main
+********/
+
+.first_image {
+    width: 100%;
+    height: 550px;
+    background-color: rgb(131, 233, 224);
+    margin-top: 30px;
+}
+
+.title,
+.site_footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(42, 130, 165, 0.555);
+}
+
+.row {
+    background-color: beige;
+}
+
+.aside {
+    width: 20%;
+    height: 650px;
+    background-color: paleturquoise;
+    float: left;
+}
+
+.aside > .img,
+.article_site > .img {
+    height: 42%;
+    background-color: rgba(0, 0, 255, 0.212);
+}
+
+.article_site {
+    width: 56%;
+    height: 650px;
+    background-color: paleturquoise;
+    float: left;
+    margin: 0 2%;
+}
+
+/* footer
+**********/

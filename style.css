@@ -10,6 +10,15 @@ body {
     margin: auto;
 }
 
+img {
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(85%);
+}
+
+/* debug 
+*********/
+
 .debug {
     background-color: rgba(155, 173, 235, 0.356);
 }
@@ -51,6 +60,14 @@ body {
     height: 650px;
 }
 
+/* variables
+*************/
+
+:root {
+    --text-white: white;
+    --text_article-color: rgb(163, 163, 163);
+}
+
 /* utilities
 *************/
 
@@ -63,7 +80,7 @@ body {
 }
 
 .color_text {
-    color: rgb(163, 163, 163);
+    color: var(--text_article-color)
 }
 
 .clearfix::after {
@@ -75,9 +92,6 @@ body {
 .row img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
-    border-radius: 15px;
-    filter: brightness(85%);
 }
 
 /* header
@@ -113,33 +127,37 @@ body {
 
 .page_nav > a.active {
     background-color: rgb(29, 29, 29);
-    color: white;
+    color: var(--text-white);
     border-radius: 15px;
 }
 
 /* main
 ********/
 
-.hero_img {
+.hero {
     height: 600px;
-    background-image: url(./img/banner.jpg);
-    background-size: cover;
-    background-position: right;
-    background-color: rgba(0, 0, 0, 0.2);
-    background-blend-mode: multiply;
-    border-radius: 15px;
     position: relative;
 }
 
-.text_img {
+.hero_img {
+    height: 100%;
+    width: 100%;
+/*  background-image: url(./img/banner.jpg);
+    background-size: cover;
+    background-position: right;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply; */
+}
+
+.text_hero {
     width: 50%;
     position: absolute;
     bottom: 4.5rem;
     left: 3rem;
-    color: white;
+    color: var(--text-white);
 }
 
-#title_img {
+#title_hero {
     font-size: 2rem;
 }
 
@@ -160,7 +178,25 @@ body {
 
 footer {
     font-size: 1.5rem;
+    position: relative;
+    vertical-align: middle;
+    border-top: 1px solid lightgray;
+    padding: 1rem;
 }
+
+footer>span {
+    line-height: 60px;
+}
+
+footer >a {
+    float: right;
+    background-color: rgba(148, 143, 143, 0.74);
+    color: var(--text-white);
+    padding: 1.25rem;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 20px;
+} 
 
 .heart {
     color: red;

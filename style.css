@@ -10,7 +10,7 @@ body {
     margin: auto;
 }
 
-img {
+main img {
     object-fit: cover;
     border-radius: 15px;
     filter: brightness(85%);

@@ -58,6 +58,14 @@ body {
     margin-top: 25px;
 }
 
+.t-a_c {
+    text-align: center;
+}
+
+.color_text {
+    color: rgb(163, 163, 163);
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -92,7 +100,6 @@ body {
 .page_nav > a {
     float: left;
     color: rgb(163, 163, 163);
-    text-align: center;
     padding: 0.75rem;
     text-decoration: none;
     font-size: 1.25rem;
@@ -136,20 +143,10 @@ body {
     font-size: 2rem;
 }
 
-.color_text {
-    color: rgb(163, 163, 163);
-}
-
 .aside {
     width: 20%;
     float: left;
     position: relative;
-}
-
-.aside > .img,
-.article_site > .img {
-    height: 42%;
-    background-color: rgba(0, 0, 255, 0.212);
 }
 
 .article_site {
@@ -162,7 +159,6 @@ body {
 **********/
 
 footer {
-    text-align: center;
     font-size: 1.5rem;
 }
 

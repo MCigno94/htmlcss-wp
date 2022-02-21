@@ -167,6 +167,11 @@ main img {
     position: relative;
 }
 
+aside > p,
+article > p {
+    margin-top: 0.25rem;
+}
+
 .article_site {
     width: 56%;
     float: left;
@@ -188,7 +193,7 @@ footer>span {
     line-height: 60px;
 }
 
-footer >a {
+footer > a {
     float: right;
     background-color: rgba(148, 143, 143, 0.74);
     color: var(--text-white);
